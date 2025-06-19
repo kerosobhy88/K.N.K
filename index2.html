@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styele.css">
+    <title>K.N.K</title>
+</head>
+<body id="bodypage2">
+
+    <nav class="navbar navbar-expand-lg ">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active Home2" aria-current="page" id="back" href="#"><i class="fa-solid fa-house"></i> Home</a>
+              </li>
+                <button  class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-filter"></i> Choose system
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#" id="dropdownnote">add Note <i class="fa-solid fa-clipboard"></i></a></li>
+                  <li><a class="dropdown-item" href="#"  id="dropdowntodo">To-do list <i class="fa-solid fa-list-check"></i></a></li>
+                  <li><a class="dropdown-item" href="#"  id="dropdownimge">add image <i class="fa-solid fa-image"></i></a></li>
+                </ul>
+            </ul>
+      </nav>
+<!--  ======================cards ========================== -->
+<!--  ======================note ========================== -->
+<div class="note" id="note">
+    <h3 class="titaladdNote">add Note <i class="fa-solid fa-clipboard"></i></h3>
+    <div class="mb-3 card1">
+        <label for="exampleFormControlInput1" class="form-label">Title</label>
+        <input id="title1" type="text" class="form-control" id="exampleFormControlInput1" >
+      </div>
+      <div class="mb-3 card1">
+        <label  for="exampleFormControlTextarea1" class="form-label">Enter the content</label>
+        <textarea class="form-control" id="textarea1" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <button id="btnaddnote"  class="buttonaddnote button2">add Note </button><hr>
+      <div class="row d-flex justify-content-center align-items-center flex-column m-1">
+     
+        <ol id="displaynote">
+        
+        </ol>
+      
+      </div>
+</div>
+<!--  ======================to do lis ========================== -->
+<div class="todolist" id="todolist">
+    <h3 class="titaladdNote">To-do list <i class="fa-solid fa-clipboard"></i></h3>
+    <div class="mb-3 card1">
+        <label for="exampleFormControlInput1" class="form-label">date</label>
+        <input type="date" class="form-control"  id="datetodo" >
+      </div>
+    <div class="mb-3 card1">
+        <label for="exampleFormControlInput1" class="form-label">Title</label>
+        <input type="email" class="form-control"  id="title2">
+      </div>
+      <div class="mb-3 card1">
+        <label for="exampleFormControlTextarea1" class="form-label">Enter the content</label>
+        <textarea class="form-control" rows="3" id="textarea2"></textarea>
+      </div>
+      <button id="btntodolist" class="buttontodo"><i class="fa-solid fa-plus" ></i></button><hr>
+
+      <div class="row d-flex justify-content-center gap-2" id="displatodolistht">
+            
+      </div>
+</div>
+
+<!--  ====================== add imge ========================== -->
+
+<div class="addimges" id="addimge">
+  <h3 class="titaladdNote">add image <i class="fa-solid fa-clipboard"></i></h3>
+  <div class="mb-3 card1">
+    <label for="exampleFormControlInput1" class="form-label">image</label>
+    <input type="file" class="form-control" id="imges" accept="image/*">
+  </div>
+  <button id="btnaddimges" class="buttonimge"><i class="fa-solid fa-plus"></i></button>
+  <hr>
+
+  <div class="row d-flex justify-content-center gap-2" id="output"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+</body>
+</html>

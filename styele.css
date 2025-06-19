@@ -1,0 +1,538 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.body1{
+    background-color: rgba(0, 0, 0, 0);
+   
+}
+#bodypage2{
+    background-color:grey;
+}
+/* ==============navbar=========================== */
+.nav1{
+    background-color: rgba(0, 0, 0, 0.521);
+    color: aliceblue !important; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 2px 2px 5px 2px rgb(0, 0, 0);
+}    
+.container-fluid{
+    color: aliceblue;
+}
+.nav-item{
+    margin: 10px 20px;
+}
+.brand,.Connect1 h2{
+font-size: 35px;
+font-weight: 600;
+color: rgb(255, 101, 45);
+}
+.link-light{
+    transition: 0.3s;
+}
+.link-light:hover{
+    color: rgb(255, 101, 45) !important ;
+}
+/* ======================img(Home)========================== */
+
+.imghome{
+    background-color: black;
+    background-image: url(https://i.postimg.cc/sgfv4mQh/luke-southern-ft-Qrm7-D1-Rw0-unsplash.jpg);
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    opacity:50%;
+    max-width: 1600px;
+    position: relative;
+}
+@media (max-width:992px){
+    .writetital{
+        top: 260px !important;
+    }
+}
+.writetital{
+    /* height: 300px; */
+    position: absolute;
+    top: 130px;
+    font-size: 20px;
+    left: 50px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.795);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    overflow: hidden;
+   
+}
+.writetital2{
+    overflow: hidden;
+    width: 0px;
+    font-weight: 700;
+    animation:write 5s steps(30,end) forwards infinite ;
+    white-space: nowrap;
+}
+.writetital1{
+    /* background-color: rgba(0, 0, 0, 0.74); */
+    overflow: hidden;
+    width: 340px;
+    font-weight: 700;
+    /* animation:write 5s steps(30,end) forwards infinite ; */
+    white-space: nowrap;
+}
+@keyframes write{
+    to{
+        width: 340px;
+    }
+    from{
+        width: 0px;
+    }
+}
+.writetital1:hover{
+    animation-play-state: paused;
+}
+.Welcome {
+    font-size: 40px;
+    color: rgb(255, 101, 45) !important ;
+    font-weight: 800;
+    width: 100px;
+    margin: 0 70px;
+}
+.button1{
+    background-color:rgb(255, 101, 45) ;
+    color: aliceblue;
+    font-size: 70px;
+    font-weight: 900;
+    height: 100px;
+    width: 100px;
+    padding-left:19px ;
+    border-radius: 50%;
+    border: none;
+    text-decoration: none;
+    transition: .3s;
+    display: inline-block;
+    margin: 30px 0px 0 120px;
+    
+}
+.button1:hover{
+    transform:rotateZ(-140deg);
+    box-shadow: 0px 0px 30px rgb(255, 162, 22);
+    opacity: 60%;
+}
+/* ======================Reviews========================== */
+.Reviews{
+    display: flex;
+    justify-content: center;
+   align-items: center; 
+}
+.button2{
+    background-color:rgb(255, 101, 45) ;
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: 900;
+    height: 50px;
+    width: 160px;
+    border: none;
+    transition: .3s;
+    border-radius: 20px;
+    margin: 25px 0;
+    transition: 0.3s;
+}
+.button2:hover{
+    background-color: white;
+    color: rgb(255, 101, 45);
+    /* border: 2px solid rgb(255, 101, 45); */
+  
+}
+/* ======================About========================== */
+.About{
+    font-weight: 900;
+    text-shadow: 0px 6px 2px rgb(255, 101, 45);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 40px;
+}
+.Aboutfelx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:585px){
+    .Aboutfelx{
+       flex-direction: column;
+    }
+}
+.About1{
+    background-color: rgba(0, 0, 0, 0.13);
+    height: 220px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    box-shadow: 1px 2px 12px 1px black;
+    transition: 0.3s;
+    margin: 25px 40px;
+}
+.About1 i{
+    font-size: 100px;transition: 0.3s;
+}
+.About1 p{
+    font-size: 18px;
+    font-weight: 900;
+    margin-top: 13px;
+}
+.About1:hover.About1 i{
+    color: rgb(255, 101, 45);
+}
+.About1:hover{
+    transform: translate(0,-10px);
+}
+/* ======================Connect========================== */
+.Connect{
+    display: inline-block;
+    margin: 160px 0px 0 30px;
+    font-weight: 900;
+    text-shadow: 0px 6px 2px rgb(255, 101, 45);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 35px;
+}
+.Connect1{
+    margin: 0px !important;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.062);
+    
+}
+@media (max-width:933px){
+    .Connect1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    } 
+}
+.divul{
+    width: 80px;
+}
+.h2connect{
+    width: 160px;
+}
+.Connect1 ul li{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    width: 0px;
+     margin-top: 10px;
+    background-color:rgb(255, 101, 45) ;
+    transition: 0.5s;
+}
+.Connect1 ul{
+padding: 0px !important;
+}
+.Connect1 ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.534);
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.3s;
+   
+}
+
+.Connect1 ul li:hover{
+  color:white ;
+  transform: translate(5px,0px);
+  width: 74px;
+}
+.iconsconnect a {
+    text-decoration: none;
+  color: #222831;
+    background-color: #f1f2f3;
+ padding: 10px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.iconsconnect a:hover {
+  color: white;
+    background-color:rgb(255, 101, 45);
+}
+
+.contentus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ 
+}
+.contentus h2{
+    color: #000000;
+    text-align: center;
+    font-family:'Italic',cursive; font-weight: 600;
+padding: 10px 0;
+font-size: 30px;
+}
+.contentus .a1{
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+}
+.contentus .a1:hover{
+    color:rgb(255, 101, 45);
+}
+.contentus p{
+  font-weight: 700;
+  text-align: center;
+  word-spacing: 3px;
+  line-height: 25px;
+ padding: 10px 0 0 0;
+ color: #000000be;
+}
+.iconsconnect{
+    width: 230px !important;
+}
+.Rights{
+    text-align: center;
+    color:rgba(0, 0, 0, 0.473);
+    background-color: rgba(0, 0, 0, 0.062);
+}
+.Rights p{
+    padding: 0 0 10px 0;
+    margin:0 !important;
+}
+hr{
+  margin: 5px 20px;
+}
+/* ====================== page(2) index2========================== */
+
+.dropdown-toggle,.Home2{
+    height: 40px !important;
+    margin-top: 10px;
+    width: 170px;
+    background-color:rgb(255, 101, 45);
+    border: none;
+    border-radius: 20px;
+    margin-left: 10px;
+    text-align: center;
+    transition: 0.5s;
+}
+.Home2{
+    margin-top: 0px;
+    color: white !important;
+}
+.dropdown-toggle{
+    margin-left: 10px !important;
+}
+.Home2:hover{
+    background-color:white;
+    border: 2px rgb(255, 101, 45) solid ;
+    color: black !important;
+}
+.dropdown-item:hover{
+    background-color:rgb(255, 101, 45);
+}
+/* ======================cards ========================== */
+/* ======================note ========================== */
+.titaladdNote{
+    text-align: center;
+    text-shadow: 0px 6px 2px rgb(255, 101, 45);
+}
+.note{
+    width: 400px; 
+    overflow-x:hidden; 
+    overflow-y: auto;
+    height: 500px;
+    white-space: nowrap; 
+    background-color: rgba(0, 0, 0, 0.486);
+    padding: 10px;
+    margin: 20px auto;
+    box-shadow: 1px 2px 12px 1px black;
+    border-radius: 30px;
+    
+}
+.note2{
+    width: 400px; 
+    overflow-x:hidden; 
+    overflow-y: auto;
+    height: 500px;
+    white-space: nowrap; 
+    background-color: rgba(0, 0, 0, 0.486);
+    padding: 10px;
+    margin: 20px auto;
+    box-shadow: 1px 2px 12px 1px black;
+    border-radius: 30px;
+    display:none;
+}
+
+.note input,.note textarea,.todolist input,.todolist textarea,.addimges input{
+background-color: rgba(0, 0, 0, 0.356);
+}
+.note label,.todolist label,.form-label{
+    color: white;
+}
+.buttonaddnote{
+    background-color:rgb(255, 101, 45) ;
+    color: aliceblue;
+    font-size: 15px;
+    font-weight: 900;
+    height: 45px;
+    width: 90px;
+    border: none;
+    border-radius: 20px;
+    margin: 0px 0;
+    transition: 0.3s;
+}
+.display1{
+    background-color: white;
+    width: 350px;
+    height: 65px;
+    list-style-position: inside;
+    font-weight: 900;   
+    box-shadow: 1px 2px 12px 1px white;
+    border: 1px rgb(255, 101, 45) solid;
+    border-radius: 20px;
+    overflow-y: auto;padding: 0px 10px;
+}
+.display1{
+    font-size: 18px;
+}
+
+.display1 li::marker {
+    color: rgb(255, 101, 45);
+    font-size: 22px;
+    font-weight: 800;
+  }
+  .totate,.delete{
+      border: none;
+      font-size: 17px;
+      color: rgba(0, 0, 0, 0.486);
+      margin: 5px;
+      background: none;
+      transition: 0.3s all;
+      
+  }
+  .totate:hover{
+      color: green;
+  }
+  .delete:hover{
+    color: red;
+}
+/* ======================to do list ========================== */
+.todolist{
+    width: 400px; 
+    overflow-x:hidden; 
+    overflow-y: auto;
+    height: 530px;
+    white-space: nowrap; 
+    background-color: rgba(0, 0, 0, 0.486);
+    padding: 10px;
+    margin: 20px auto;
+    box-shadow: 1px 2px 12px 1px black;
+    border-radius: 30px;
+    display: none;
+}
+.todolist2{
+    width: 400px; 
+    overflow-x:hidden; 
+    overflow-y: auto;
+    height: 530px;
+    white-space: nowrap; 
+    background-color: rgba(0, 0, 0, 0.486);
+    padding: 10px;
+    margin: 20px auto;
+    box-shadow: 1px 2px 12px 1px black;
+    border-radius: 30px;
+}
+.buttontodo{
+    background-color:black ;
+    color: rgb(255, 101, 45);
+    font-size: 22px;
+    font-weight: 900;
+    height: 45px;
+    width: 45px;
+   margin-left: 170px;
+    border: none;
+    display: inline;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.buttontodo:hover{
+    transform:rotateZ(-90deg);
+    color: white;
+}
+.displaytodolist{
+    background-color:lightcoral ;
+    height: 70px;
+    width: 330px;
+    padding-bottom: 13px;
+    overflow-x:auto; 
+    overflow-y: auto;
+    white-space: nowrap; 
+    margin-top:10px;
+}.displaytodolist2{
+    background-color:blueviolet ;
+    height: 70px;
+    width: 330px;
+    padding-bottom: 13px;
+    overflow-x:auto; 
+    overflow-y: auto;
+    white-space: nowrap; 
+    margin-top:10px;
+}
+
+#checkboxtodo{
+    margin: 012px 0px 0 40px;
+}
+.buton{
+    background-color: #222831;
+    height: 25px;
+    width: 25px;
+    border-radius:50% ;
+    color: white;
+}
+/* ======================add imges ========================== */
+.addimges{
+    width: 400px; 
+    overflow-x:hidden; 
+    overflow-y: auto;
+    height: 530px;
+    white-space: nowrap; 
+    background-color: rgba(0, 0, 0, 0.486);
+    padding: 10px;
+    margin: 20px auto;
+    box-shadow: 1px 2px 12px 1px black;
+    border-radius: 30px;
+    display: none;
+}
+.addimges2{
+    width: 400px; 
+    overflow-x:hidden; 
+    overflow-y: auto;
+    height: 530px;
+    white-space: nowrap; 
+    background-color: rgba(0, 0, 0, 0.486);
+    padding: 10px;
+    margin: 20px auto;
+    box-shadow: 1px 2px 12px 1px black;
+    border-radius: 30px;
+}
+.buttonimge{
+    background-color:rgb(19, 255, 70) ;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    font-weight: 900;
+    height: 45px;
+    width: 45px;
+   margin-left: 170px;
+    border: none;
+    display: inline;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.buttonimge:hover{
+    transform:rotateZ(-90deg);
+    color: rgb(0, 0, 0);
+}
