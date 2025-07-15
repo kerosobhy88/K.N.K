@@ -250,17 +250,17 @@ dropdownimge.addEventListener("click",function(){
 
 })
 
-if (localStorage.getItem("drob1")=="drob3") {
-    document.getElementById("addimge").classList.replace("addimges","addimges2")
-    document.getElementById("note").classList.replace("note","note2")
+if (localStorage.getItem("drob1")=="drob1") {
+   document.getElementById("note").classList.replace("note2","note")
     document.getElementById("todolist").classList.replace("todolist2","todolist")
+    document.getElementById("addimge").classList.replace("addimges2","addimges")
 }else if(localStorage.getItem("drob1")=="drob2"){
-    document.getElementById("note").classList.replace("note","note2")
+     document.getElementById("note").classList.replace("note","note2")
     document.getElementById("todolist").classList.replace("todolist","todolist2")
     document.getElementById("addimge").classList.replace("addimges2","addimges")
 }
 else{
-     document.getElementById("note").classList.replace("note","note2")
-    document.getElementById("todolist").classList.replace("todolist","todolist2")
-    document.getElementById("addimge").classList.replace("addimges2","addimges")
+      document.getElementById("addimge").classList.replace("addimges","addimges2")
+    document.getElementById("note").classList.replace("note","note2")
+    document.getElementById("todolist").classList.replace("todolist2","todolist")
 }
