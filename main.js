@@ -37,10 +37,21 @@ function addnote() {
     }
     console.log(countenar);
     display()
+    localStorage.setItem("countenar","countenar1")
     title1.value=""
     textarea1.value=""
 }
 
+if (localStorage.getItem("countenar")=="countenar1") {
+      if(ubdatefaleg==false){
+        countenar.push(object1);
+    }else{
+        document.getElementById("btnaddnote").innerHTML="add Note "
+    document.getElementById("btnaddnote").style.backgroundColor=''
+    countenar[temp]=object1
+    ubdatefaleg=false
+    }
+}
 
 function display(){
     var cartonaa=""
